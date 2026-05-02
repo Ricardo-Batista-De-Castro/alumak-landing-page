@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e2c36b;
+  --dark: #0a0a0a;
+  --dark-2: #111111;
+  --dark-3: #1a1a1a;
+  --gray: #2a2a2a;
+  --gray-light: #888888;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #c9a84c, #e2c36b, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section padding */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Swiper custom */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5) !important;
+  width: 8px !important;
+  height: 8px !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+.swiper-pagination-bullet-active {
+  background: #c9a84c !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #c9a84c !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: rgba(0,0,0,0.4) !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(201,168,76,0.3) !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+/* Gold button */
+.btn-gold {
+  background: linear-gradient(135deg, #c9a84c, #e2c36b);
+  color: #0a0a0a;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #e2c36b, #c9a84c);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(201,168,76,0.3);
+}
+
+/* Outline button */
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+.btn-outline:hover {
+  border-color: #c9a84c;
+  color: #c9a84c;
+  transform: translateY(-2px);
+}
+
+/* Section title */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.4s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+}
+
+/* Input styles */
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 14px 16px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+.form-input:focus {
+  border-color: #c9a84c;
+  background: rgba(201, 168, 76, 0.05);
+}
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
