@@ -38,6 +38,8 @@ export default function CTA() {
           <p className="text-white/50 text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto">
             Entre em contato com nossa equipe e receba um orçamento personalizado sem compromisso. Atendemos projetos residenciais, comerciais e industriais.
           </p>
+          {/* Spacer */}
+          <div className="h-2" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contato"

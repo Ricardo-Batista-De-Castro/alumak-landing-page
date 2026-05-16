@@ -40,7 +40,6 @@ const stats = [
   { value: '98%', label: 'Clientes satisfeitos' },
   { value: '50+', label: 'Cidades atendidas' },
 ]
-
 export default function Differentials() {
   return (
     <section id="diferenciais" className="section-padding relative overflow-hidden bg-[#0d0d0d]">

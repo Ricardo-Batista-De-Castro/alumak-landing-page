@@ -130,11 +130,16 @@ export default function Products() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4">
             Nossos <span className="gold-text">Produtos</span>
           </h2>
+          {/* Spacer */}
+          <div className="h-2" />
           <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent mx-auto mb-6" />
           <p className="text-white/50 text-base max-w-xl mx-auto">
             Linha completa de esquadrias em alumínio para projetos residenciais e corporativos.
           </p>
         </motion.div>
+
+        {/* Spacer */}
+        <div className="h-2" />
 
         {/* Filter Tabs */}
         <motion.div
@@ -147,16 +152,18 @@ export default function Products() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
-                activeCategory === cat
+              className={`px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${activeCategory === cat
                   ? 'bg-[#c9a84c] text-black'
                   : 'glass text-white/60 hover:text-white border border-white/10 hover:border-[#c9a84c]/30'
-              }`}
+                }`}
             >
               {cat}
             </button>
           ))}
         </motion.div>
+
+        {/* Spacer */}
+        <div className="h-6 md:h-8" />
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">

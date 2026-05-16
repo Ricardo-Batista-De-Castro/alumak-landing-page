@@ -183,3 +183,10 @@ body {
 .form-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
+
+/* Hide header CTA on mobile */
+@media (max-width: 767px) {
+  .header-cta {
+    display: none !important;
+  }
+}

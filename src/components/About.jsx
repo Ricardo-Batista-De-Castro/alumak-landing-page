@@ -79,7 +79,6 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           >
-            <span className="section-label">Sobre a Empresa</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
               Sobre a <span className="gold-text">Alumak</span>
             </h2>
@@ -87,9 +86,12 @@ export default function About() {
             <p className="text-white/60 text-base leading-relaxed mb-10">
               A Alumak atua no segmento de esquadrias de alumínio oferecendo soluções modernas, sofisticadas e de alta qualidade para projetos residenciais e comerciais. Trabalhamos com foco em excelência, acabamento premium e inovação, proporcionando beleza, segurança e durabilidade em cada projeto.
             </p>
-            <p className="text-white/60 text-base leading-relaxed mb-10">
+            <p className="text-white/60 text-base leading-relaxed">
               Nossa equipe especializada está pronta para transformar sua ideia em realidade, com projetos personalizados que unem funcionalidade, estética e tecnologia de ponta.
             </p>
+
+            {/* Spacer */}
+            <div className="h-8 md:h-16" />
 
             {/* Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

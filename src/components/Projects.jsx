@@ -77,6 +77,8 @@ export default function Projects() {
           <p className="text-white/50 text-base max-w-xl mx-auto">
             Conheça alguns dos projetos que entregamos com qualidade e excelência.
           </p>
+          {/* Spacer */}
+          <div className="h-2"/>
         </motion.div>
 
         {/* Masonry-style Grid */}
@@ -87,9 +89,8 @@ export default function Projects() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`group relative overflow-hidden rounded-2xl cursor-pointer ${
-                i === 0 || i === 4 ? 'sm:row-span-1' : ''
-              }`}
+              className={`group relative overflow-hidden rounded-2xl cursor-pointer ${i === 0 || i === 4 ? 'sm:row-span-1' : ''
+                }`}
               onClick={() => setSelected(project)}
             >
               <div className={`overflow-hidden ${i === 0 ? 'aspect-[3/2]' : 'aspect-[4/3]'}`}>
