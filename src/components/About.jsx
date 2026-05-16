@@ -3,6 +3,9 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Award, Zap, Users, Clock, Ruler, Shield } from 'lucide-react'
 
+// About Image
+import sobreEquipe from '../assets/sobre_equipe.jpg'
+
 const highlights = [
   { icon: Award, label: 'Qualidade Premium', desc: 'Materiais de alta durabilidade' },
   { icon: Zap, label: 'Tecnologia Avançada', desc: 'Processos modernos e eficientes' },
@@ -53,7 +56,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80"
+                src={sobreEquipe}
                 alt="Alumak - Esquadrias Premium"
                 className="w-full h-[500px] object-cover"
               />

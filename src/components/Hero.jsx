@@ -8,10 +8,15 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
+// Hero Images
+import hero1 from '../assets/hero_carrossel_1.jpg'
+import hero2 from '../assets/hero_carrossel_2.jpg'
+import hero3 from '../assets/hero_carrossel_3.jpg'
+
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
+    image: hero1,
     title: 'Esquadrias modernas para transformar seu projeto',
     subtitle: 'Sofisticação, durabilidade e acabamento premium em alumínio e vidro.',
     btn: 'Solicitar orçamento',
@@ -20,7 +25,7 @@ const slides = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80',
+    image: hero2,
     title: 'Tecnologia e elegância em cada detalhe',
     subtitle: 'Janelas, portas e fachadas desenvolvidas para alto padrão.',
     btn: 'Conheça nossos projetos',
@@ -29,7 +34,7 @@ const slides = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1920&q=80',
+    image: hero3,
     title: 'Persianas elétricas e soluções modernas',
     subtitle: 'Automação, conforto e design contemporâneo para sua residência.',
     btn: 'Falar no WhatsApp',

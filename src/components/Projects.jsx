@@ -2,6 +2,14 @@ import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { X, ZoomIn, MapPin } from 'lucide-react'
 
+// Project Images
+import projetoResidencial1 from '../assets/projeto_residencial_1.jpg'
+import projetoComercial1 from '../assets/projeto_comercial_1.jpg'
+import projetoResidencial2 from '../assets/projeto_residencial_2.jpg'
+import projetoResidencial3 from '../assets/projeto_residencial_3.jpg'
+import projetoComercial3 from '../assets/projeto_comercial_3.jpg'
+import projetoComercial2 from '../assets/projeto_comercial_2.jpg'
+
 const projects = [
   {
     id: 1,
@@ -9,7 +17,7 @@ const projects = [
     location: 'São Paulo, SP',
     type: 'Residencial',
     desc: 'Fachada em pele de vidro com caixilhos em alumínio natural e portas pivotantes de 3m.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+    image: projetoResidencial1,
   },
   {
     id: 2,
@@ -17,7 +25,7 @@ const projects = [
     location: 'Campinas, SP',
     type: 'Comercial',
     desc: 'Fechamento total em vidro estrutural com esquadrias de correr para 12 andares.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    image: projetoComercial1,
   },
   {
     id: 3,
@@ -25,7 +33,7 @@ const projects = [
     location: 'Santos, SP',
     type: 'Residencial',
     desc: 'Sacadas envidraçadas com guarda-corpo em vidro laminado e sistema de correr slim.',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
+    image: projetoResidencial2,
   },
   {
     id: 4,
@@ -33,7 +41,7 @@ const projects = [
     location: 'Ribeirão Preto, SP',
     type: 'Residencial',
     desc: 'Janelas maxim-ar de piso ao teto com persianas elétricas integradas.',
-    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80',
+    image: projetoResidencial3,
   },
   {
     id: 5,
@@ -41,7 +49,7 @@ const projects = [
     location: 'Gramado, RS',
     type: 'Hoteleiro',
     desc: 'Esquadrias em alumínio escuro anodizado em todas as 48 unidades habitacionais.',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+    image: projetoComercial3,
   },
   {
     id: 6,
@@ -49,7 +57,7 @@ const projects = [
     location: 'São Paulo, SP',
     type: 'Comercial',
     desc: 'Divisórias em vidro temperado, portas de correr automáticas e controle solar.',
-    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80',
+    image: projetoComercial2,
   },
 ]
 

@@ -73,7 +73,7 @@ export default function Differentials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 rounded-2xl overflow-hidden mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 rounded-2xl overflow-hidden mb-40"
         >
           {stats.map((s, i) => (
             <div key={i} className="bg-[#0d0d0d] py-8 px-6 text-center">
@@ -82,6 +82,9 @@ export default function Differentials() {
             </div>
           ))}
         </motion.div>
+
+        {/* Espaço forçado */}
+        <div className="h-4" />
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

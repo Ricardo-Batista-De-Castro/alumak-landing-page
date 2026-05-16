@@ -2,6 +2,16 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
 
+// Product Images
+import produtoPortaVidroTemperado from '../assets/produto_porta_vidro_temperado.jpg'
+import produtoJanelaMaximAr from '../assets/produto_janela_maxim_ar.jpg'
+import produtoFachadaVidro from '../assets/produto_fachada_vidro.jpg'
+import produtoGuardaCorpo from '../assets/produto_guarda_corpo.jpg'
+import produtoBoxBanheiro from '../assets/produto_box_banheiro.jpg'
+import produtoEspelhoDecorativo from '../assets/produto_espelho_decorativo.jpg'
+import produtoJanelaCorrer from '../assets/produto_janela_correr.jpg'
+import produtoDivisoriaEscritorio from '../assets/produto_divisoria_escritorio.jpg'
+
 const categories = ['Todos', 'Portas', 'Janelas', 'Fachadas', 'Sacadas', 'Persianas']
 
 const products = [
@@ -10,56 +20,56 @@ const products = [
     category: 'Portas',
     name: 'Porta de Correr em Alumínio',
     desc: 'Design moderno com trilhos de alta precisão e vidro temperado.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    image: produtoPortaVidroTemperado,
   },
   {
     id: 2,
     category: 'Janelas',
     name: 'Janela Maxim-Ar',
     desc: 'Ventilação eficiente com estrutura em alumínio anodizado.',
-    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80',
+    image: produtoJanelaMaximAr,
   },
   {
     id: 3,
     category: 'Fachadas',
     name: 'Fachada em Vidro Temperado',
     desc: 'Fachadas amplas com vidro estrutural de alto desempenho.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
+    image: produtoFachadaVidro,
   },
   {
     id: 4,
     category: 'Sacadas',
     name: 'Sacada com Guarda-Corpo',
     desc: 'Elegância e segurança com vidro laminado e perfis slim.',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80',
+    image: produtoGuardaCorpo,
   },
   {
     id: 5,
     category: 'Persianas',
-    name: 'Persiana Elétrica',
-    desc: 'Automação com motor silencioso e controle remoto ou app.',
-    image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
+    name: 'Box de Banheiro',
+    desc: 'Box sob medida com vidro temperado e acabamento premium.',
+    image: produtoBoxBanheiro,
   },
   {
     id: 6,
     category: 'Portas',
-    name: 'Porta Pivotante Premium',
-    desc: 'Impacto visual imediato com movimento suave e seguro.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+    name: 'Espelho Decorativo',
+    desc: 'Espelhos personalizados com molduras em alumínio.',
+    image: produtoEspelhoDecorativo,
   },
   {
     id: 7,
     category: 'Janelas',
     name: 'Janela de Correr',
     desc: 'Praticidade e estética para ambientes residenciais e comerciais.',
-    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80',
+    image: produtoJanelaCorrer,
   },
   {
     id: 8,
     category: 'Fachadas',
-    name: 'Pele de Vidro',
-    desc: 'Sistema de fachada inteiramente envidraçada com performance térmica.',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80',
+    name: 'Divisória de Escritório',
+    desc: 'Sistema de divisórias com vidro temperado para ambientes corporativos.',
+    image: produtoDivisoriaEscritorio,
   },
 ]
 
@@ -172,12 +182,15 @@ export default function Products() {
           ))}
         </div>
 
+        {/* Spacer */}
+        <div className="h-20" />
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-14"
+          className="text-center"
         >
           <a
             href="#contato"

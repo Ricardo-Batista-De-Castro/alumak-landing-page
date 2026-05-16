@@ -2,6 +2,9 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ChevronRight, Phone } from 'lucide-react'
 
+// CTA Background Image
+import ctaBackground from '../assets/cta_background.jpg'
+
 export default function CTA() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
@@ -11,7 +14,7 @@ export default function CTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1600&q=80"
+          src={ctaBackground}
           alt=""
           className="w-full h-full object-cover opacity-10"
         />
