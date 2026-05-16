@@ -102,39 +102,52 @@ export default function Header() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="fixed inset-0 z-60 bg-[#0a0a0a] flex flex-col pt-24 px-8"
-          >
-            <nav className="flex flex-col gap-6">
-              {navLinks.map((link, i) => (
+          <>
+            {/* Backdrop - clicável para fechar */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+              onClick={() => setMenuOpen(false)}
+            />
+            
+            {/* Menu Panel */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              className="fixed top-20 left-0 right-0 z-50 bg-[#0a0a0a]/98 backdrop-blur-xl border-b border-white/10 shadow-2xl md:hidden max-h-[calc(100vh-5rem)] overflow-y-auto"
+            >
+              <nav className="flex flex-col px-8 py-12">
+                {navLinks.map((link, i) => (
+                  <motion.a
+                    key={link.label}
+                    href={link.href}
+                    onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
+                    className="text-white/80 hover:text-[#c9a84c] text-2xl font-medium border-b border-white/10 py-8 transition-colors cursor-pointer"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.05 * i }}
+                  >
+                    {link.label}
+                  </motion.a>
+                ))}
                 <motion.a
-                  key={link.label}
-                  href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
-                  className="text-white/80 hover:text-[#c9a84c] text-2xl font-medium border-b border-white/10 pb-6 transition-colors cursor-pointer"
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.05 * i }}
+                  href="#contato"
+                  onClick={(e) => { e.preventDefault(); handleNavClick('#contato') }}
+                  className="btn-gold mt-12 mb-4 justify-center text-base"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
                 >
-                  {link.label}
+                  Solicitar Orçamento
                 </motion.a>
-              ))}
-              <motion.a
-                href="#contato"
-                onClick={(e) => { e.preventDefault(); handleNavClick('#contato') }}
-                className="btn-gold mt-4 justify-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
-              >
-                Solicitar Orçamento
-              </motion.a>
-            </nav>
-          </motion.div>
+              </nav>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>
