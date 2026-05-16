@@ -3,13 +3,13 @@ import { motion, useInView } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
 
 // Product Images
-import produtoPortaVidroTemperado from '../assets/produto_porta_vidro_temperado.jpg'
-import produtoJanelaMaximAr from '../assets/produto_janela_maxim_ar.jpg'
-import produtoFachadaVidro from '../assets/produto_fachada_vidro.jpg'
-import produtoGuardaCorpo from '../assets/produto_guarda_corpo.jpg'
-import produtoBoxBanheiro from '../assets/produto_box_banheiro.jpg'
+import produtoPortaVidroTemperado from '../assets/produto_porta_vidro_temperado.png'
+import produtoJanelaMaximAr from '../assets/produto_janela_maxim_ar.png'
+import produtoFachadaVidro from '../assets/produto_fachada_vidro.png'
+import produtoGuardaCorpo from '../assets/produto_guarda_corpo.png'
+import produtoBoxBanheiro from '../assets/produto_box_banheiro.png'
 import produtoEspelhoDecorativo from '../assets/produto_espelho_decorativo.jpg'
-import produtoJanelaCorrer from '../assets/produto_janela_correr.jpg'
+import produtoJanelaCorrer from '../assets/produto_janela_correr.png'
 import produtoDivisoriaEscritorio from '../assets/produto_divisoria_escritorio.jpg'
 
 const categories = ['Todos', 'Portas', 'Janelas', 'Fachadas', 'Sacadas', 'Persianas']
@@ -18,8 +18,8 @@ const products = [
   {
     id: 1,
     category: 'Portas',
-    name: 'Porta de Correr em Alumínio',
-    desc: 'Design moderno com trilhos de alta precisão e vidro temperado.',
+    name: 'Porta em Alumínio',
+    desc: 'Design moderno com fechamento de alta precisão e vidro temperado.',
     image: produtoPortaVidroTemperado,
   },
   {
@@ -31,9 +31,9 @@ const products = [
   },
   {
     id: 3,
-    category: 'Fachadas',
-    name: 'Fachada em Vidro Temperado',
-    desc: 'Fachadas amplas com vidro estrutural de alto desempenho.',
+    category: 'Janelas',
+    name: 'Janela em Vidro Temperado',
+    desc: 'Janelas amplas com vidro estrutural de alto desempenho.',
     image: produtoFachadaVidro,
   },
   {
@@ -46,21 +46,21 @@ const products = [
   {
     id: 5,
     category: 'Persianas',
-    name: 'Box de Banheiro',
-    desc: 'Box sob medida com vidro temperado e acabamento premium.',
+    name: 'Fechamento em área externa',
+    desc: 'Sob medida com vidro temperado e acabamento premium.',
     image: produtoBoxBanheiro,
   },
   {
     id: 6,
     category: 'Portas',
-    name: 'Espelho Decorativo',
-    desc: 'Espelhos personalizados com molduras em alumínio.',
+    name: 'Ripado em alumínio',
+    desc: 'Ripado em alumínio para ambientes internos e externos, com design moderno e funcionalidade.',
     image: produtoEspelhoDecorativo,
   },
   {
     id: 7,
     category: 'Janelas',
-    name: 'Janela de Correr',
+    name: 'Ripado em alumínio',
     desc: 'Praticidade e estética para ambientes residenciais e comerciais.',
     image: produtoJanelaCorrer,
   },

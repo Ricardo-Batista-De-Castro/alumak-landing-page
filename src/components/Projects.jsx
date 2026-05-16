@@ -3,20 +3,20 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { X, ZoomIn, MapPin } from 'lucide-react'
 
 // Project Images
-import projetoResidencial1 from '../assets/projeto_residencial_1.jpg'
+import projetoResidencial1 from '../assets/projeto_residencial_1.png'
 import projetoComercial1 from '../assets/projeto_comercial_1.jpg'
-import projetoResidencial2 from '../assets/projeto_residencial_2.jpg'
-import projetoResidencial3 from '../assets/projeto_residencial_3.jpg'
-import projetoComercial3 from '../assets/projeto_comercial_3.jpg'
-import projetoComercial2 from '../assets/projeto_comercial_2.jpg'
+import projetoResidencial2 from '../assets/projeto_residencial_2.png'
+import projetoResidencial3 from '../assets/projeto_residencial_3.png'
+import projetoComercial3 from '../assets/projeto_comercial_3.png'
+import projetoComercial2 from '../assets/projeto_comercial_2.png'
 
 const projects = [
   {
     id: 1,
-    title: 'Residência Alto Padrão',
+    title: 'Porta em alumínio com persianas integradas',
     location: 'São Paulo, SP',
     type: 'Residencial',
-    desc: 'Fachada em pele de vidro com caixilhos em alumínio natural e portas pivotantes de 3m.',
+    desc: 'Porta de entrada em alumínio com persianas integradas, proporcionando privacidade e controle de luz para ambientes residenciais.',
     image: projetoResidencial1,
   },
   {
@@ -29,18 +29,18 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Cobertura Duplex',
+    title: 'Residência de Luxo',
     location: 'Santos, SP',
     type: 'Residencial',
-    desc: 'Sacadas envidraçadas com guarda-corpo em vidro laminado e sistema de correr slim.',
+    desc: 'Portas e sacadas em alumínio com vidro temperado, integrando os ambientes internos e externos com elegância.',
     image: projetoResidencial2,
   },
   {
     id: 4,
-    title: 'Loft Moderno',
+    title: 'Divisória de piscina',
     location: 'Ribeirão Preto, SP',
     type: 'Residencial',
-    desc: 'Janelas maxim-ar de piso ao teto com persianas elétricas integradas.',
+    desc: 'Dvisória de piscina em vidro temperado com perfis de alumínio, garantindo segurança e estética para área de lazer.',
     image: projetoResidencial3,
   },
   {
@@ -53,10 +53,10 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Clínica Médica',
+    title: 'Casa de luxo',
     location: 'São Paulo, SP',
     type: 'Comercial',
-    desc: 'Divisórias em vidro temperado, portas de correr automáticas e controle solar.',
+    desc: 'Portões e janelas em alumínio com design personalizado para residência de alto padrão.',
     image: projetoComercial2,
   },
 ]

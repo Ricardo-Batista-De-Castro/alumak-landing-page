@@ -16,9 +16,10 @@ const IG = () => (
 
 const CARDS = [
   { icon: <WA />, bg: 'bg-green-500/15', color: 'text-green-400', border: 'border-green-500/20', hover: 'hover:border-green-500/50', label: 'WhatsApp', value: 'Conversar pelo WhatsApp', sub: 'Resposta rápida', href: 'https://wa.me/5519996796149' },
-  { icon: <IG />, bg: 'bg-pink-500/15', color: 'text-pink-400', border: 'border-pink-500/20', hover: 'hover:border-pink-500/50', label: 'Instagram', value: '@alumak.oficial', sub: 'Siga nossas novidades', href: 'https://instagram.com/alumak.oficial' },
-  { icon: <Mail size={20} />, bg: 'bg-amber-500/15', color: 'text-amber-400', border: 'border-amber-500/20', hover: 'hover:border-amber-500/50', label: 'E-mail', value: 'contatoalum.mak@hotmail.com', sub: 'Enviar e-mail', href: 'mailto:contatoalum.mak@hotmail.com' },
-  { icon: <MapPin size={20} />, bg: 'bg-blue-500/15', color: 'text-blue-400', border: 'border-blue-500/20', hover: 'hover:border-blue-500/50', label: 'Endereço', value: 'Rua das Esquadrias, 123', sub: 'São Paulo, SP', href: 'https://maps.google.com' },
+  { icon: <Phone size={20} />, bg: 'bg-amber-500/15', color: 'text-amber-400', border: 'border-amber-500/20', hover: 'hover:border-amber-500/50', label: 'Telefone', value: '(19) 99679-6149', sub: 'Ligue agora', href: 'tel:+5519996796149' },
+  { icon: <IG />, bg: 'bg-pink-500/15', color: 'text-pink-400', border: 'border-pink-500/20', hover: 'hover:border-pink-500/50', label: 'Instagram', value: '@alumak.oficial', sub: 'Siga nossas novidades', href: 'https://www.instagram.com/alum_mak/' },
+  { icon: <Mail size={20} />, bg: 'bg-purple-500/15', color: 'text-purple-400', border: 'border-purple-500/20', hover: 'hover:border-purple-500/50', label: 'E-mail', value: 'contatoalum.mak@hotmail.com', sub: 'Enviar e-mail', href: 'mailto:contatoalum.mak@hotmail.com' },
+  { icon: <MapPin size={20} />, bg: 'bg-blue-500/15', color: 'text-blue-400', border: 'border-blue-500/20', hover: 'hover:border-blue-500/50', label: 'Endereço', value: 'Rua das Esquadrias, 123', sub: 'Vinhedo, SP', href: 'https://maps.google.com' },
   { icon: <Clock size={20} />, bg: 'bg-amber-400/15', color: 'text-amber-400', border: 'border-amber-400/20', hover: 'hover:border-amber-400/40', label: 'Horário de Atendimento', value: 'Segunda a Sexta', sub: '08h – 18h', href: null },
 ]
 
@@ -158,7 +159,7 @@ export default function Contact() {
                     <input name="email" type="email" value={form.email} onChange={onChange} required placeholder="seu@email.com" className={inpFull} />
                   </Field>
                   <Field label="Mensagem" required>
-                    <textarea name="message" value={form.message} onChange={onChange} required placeholder="Conte um pouco sobre seu projeto e como podemos ajudar..." rows={7} className={`${inpFull} resize-none`} />
+                    <textarea name="message" value={form.message} onChange={onChange} required placeholder="Conte um pouco sobre seu projeto e como podemos ajudar..." rows={11} className={`${inpFull} resize-none`} />
                   </Field>
                   <button
                     type="submit"

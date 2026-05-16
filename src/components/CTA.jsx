@@ -55,13 +55,6 @@ export default function CTA() {
               Solicitar orçamento grátis
               <ChevronRight size={16} />
             </a>
-            <a
-              href="tel:+5511999999999"
-              className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/20 text-white/80 hover:text-white hover:border-white/40 text-sm font-semibold transition-all duration-300"
-            >
-              <Phone size={16} />
-              Ligar agora
-            </a>
           </div>
         </motion.div>
       </div>

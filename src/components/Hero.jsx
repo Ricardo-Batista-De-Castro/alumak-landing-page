@@ -10,7 +10,7 @@ import 'swiper/css/effect-fade'
 
 // Hero Images
 import hero1 from '../assets/hero_carrossel_1.jpg'
-import hero2 from '../assets/hero_carrossel_2.jpg'
+import hero2 from '../assets/hero_carrossel_2.png'
 import hero3 from '../assets/hero_carrossel_3.jpg'
 
 const slides = [
