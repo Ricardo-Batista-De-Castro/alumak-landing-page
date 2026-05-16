@@ -74,11 +74,11 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* CTA Button (desktop only) */}
           <motion.a
             href="#contato"
             onClick={(e) => { e.preventDefault(); handleNavClick('#contato') }}
-            className="hidden md:flex btn-gold text-xs cursor-pointer"
+            className="hidden md:inline-flex btn-gold text-sm font-semibold cursor-pointer items-center gap-2 header-cta"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -107,7 +107,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="fixed inset-0 z-40 bg-[#0a0a0a] flex flex-col pt-24 px-8"
+            className="fixed inset-0 z-60 bg-[#0a0a0a] flex flex-col pt-24 px-8"
           >
             <nav className="flex flex-col gap-6">
               {navLinks.map((link, i) => (
