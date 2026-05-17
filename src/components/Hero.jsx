@@ -38,7 +38,7 @@ const slides = [
     title: 'Persianas elétricas e soluções modernas',
     subtitle: 'Automação, conforto e design contemporâneo para sua residência.',
     btn: 'Falar no WhatsApp',
-    btnHref: 'https://wa.me/5511999999999',
+    btnHref: 'https://wa.me/5519996796149',
     btnIcon: <MessageCircle size={16} />,
     external: true,
   },
@@ -59,7 +59,7 @@ export default function Hero() {
       <Swiper
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         effect="fade"
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation
         loop

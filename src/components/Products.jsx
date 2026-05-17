@@ -53,8 +53,8 @@ const products = [
   {
     id: 6,
     category: 'Portas',
-    name: 'Ripado em alumínio',
-    desc: 'Ripado em alumínio para ambientes internos e externos, com design moderno e funcionalidade.',
+    name: 'Portas e janelas em alumínio',
+    desc: 'Fechamento de alta precisão e vidro temperado para ambientes residenciais e comerciais.',
     image: produtoEspelhoDecorativo,
   },
   {
